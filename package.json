@@ -9,6 +9,7 @@
   "author": "Ayooluwa Adetunmise",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^5.11.1",
     "node-sass": "^4.11.0"
   }
 }
