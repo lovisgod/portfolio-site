@@ -1,5 +1,27 @@
 html {
-  font-size: 10px; }
+  font-size: 11px; }
+
+.menu-button {
+  position: absolute;
+  z-index: 3;
+  top: 35px;
+  right: 35px;
+  cursor: pointer;
+  transition: all 0.7s ease-out; }
+  .menu-button .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 0.7s ease-out; }
+  .menu-button.close {
+    transform: rotate(180deg); }
+    .menu-button.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-button.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-button.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
 
 * {
   box-sizing: border-box; }
@@ -61,6 +83,6 @@ main {
         transition: all 0.7s ease-out; }
   main#home {
     overflow: hidden;
-    margin-left: 50vw; }
+    margin-left: 30vw; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 30vh; }

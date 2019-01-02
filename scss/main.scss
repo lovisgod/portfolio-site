@@ -1,5 +1,7 @@
 //here we import our file config file that contains our variables and functions and others
 @import 'config';
+//the menu is imported after the config and the menu can use functions or variables from config
+@import 'menu';
 
 * {
     box-sizing: border-box;
@@ -69,9 +71,9 @@ main{
     }
      &#home{
         overflow: hidden;
-         margin-left: 50vw;
+         margin-left: 30vw;
         h1{
-            margin-top: 20vh;
+            margin-top: 30vh;
         }
     }
 }

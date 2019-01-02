@@ -1,0 +1,46 @@
+//menu button
+
+.menu-button{
+    position: absolute;
+    z-index: 3;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+    //this easeOut is brought from the config.scss
+    @include easeOut;
+
+    .btn-line{
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: #fff;
+        @include easeOut;
+    }
+
+    //rotate into x menu lines
+
+    &.close{
+        transform: rotate(180deg);
+        //line 1 - rotate
+        //this is dom manipulation in css 3 it chooses each nav in the btn-line with position.
+        .btn-line{
+        &:nth-child(1){
+            //translate changes position
+            //rotate turns it
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        //line 2 - hide
+         &:nth-child(2){
+           //this hides the nav
+           opacity: 0;
+        }
+        //line 3 - totate
+         &:nth-child(3){
+            //translate changes position
+            //rotate turns it
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+    }
+  }
+}
