@@ -95,6 +95,37 @@ html {
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media only screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav.show, div.menu-branding.show {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+  .menu-nav.show {
+    height: 65vh; }
+    .menu-nav.show .nav-link {
+      font-size: 10px; }
+  .menu-branding.show {
+    height: 35vh; }
+    .menu-branding.show .portriat {
+      width: 150px;
+      height: 150px;
+      background: url(../img/profile.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      border: solid 3px #eece1a;
+      border-radius: 50%; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
 * {
   box-sizing: border-box; }
 
@@ -123,7 +154,7 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 0.2rem 1rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
@@ -154,7 +185,6 @@ main {
         color: #eece1a;
         transition: all 0.7s ease-out; }
   main#home {
-    overflow: hidden;
-    margin-left: 30vw; }
+    overflow: hidden; }
     main#home h1 {
       margin-top: 30vh; }

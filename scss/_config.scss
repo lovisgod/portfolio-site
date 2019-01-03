@@ -41,3 +41,33 @@ $profile-image: url(../img/profile.jpg);
 html{
     font-size: 11px;
 }
+
+//media query mixin
+
+@mixin smallM {
+    @media screen and (max-width:500px){
+        //this content helps with polymorphism to put any css values in the mixin anywhere
+        @content;
+    }
+}
+
+@mixin mediumM {
+    @media only screen and (max-width:768px){
+        //this content helps with polymorphism to put any css values in the mixin anywhere
+        @content;
+    }
+}
+
+@mixin largeM {
+    @media only screen and (min-width:769px) and (max-width:1170px){
+        //this content helps with polymorphism to put any css values in the mixin anywhere
+        @content;
+    }
+}
+
+@mixin xtraLargeM {
+    @media screen and (min-width:1171px){
+        //this content helps with polymorphism to put any css values in the mixin anywhere
+        @content;
+    }
+}
