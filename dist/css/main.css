@@ -221,7 +221,16 @@ main {
   .about-info {
     display: grid;
     grid-template-areas: 'bio-image' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr;
+    font-family: monospace; }
+    .about-info .bio-image {
+      grid-area: bio-image;
+      width: 120px;
+      height: 120px;
+      border: solid #eece1a 3px;
+      border-radius: 50%;
+      background-position: center center;
+      margin-left: 30%; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

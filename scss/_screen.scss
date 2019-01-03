@@ -65,7 +65,16 @@
        'job3';
 
        grid-template-columns: 1fr;
-
+       font-family: monospace;
+        .bio-image{
+        grid-area: bio-image;
+         width: 120px;
+        height: 120px;
+        border: solid $secondary-color 3px;
+        border-radius: 50%;
+        background-position: center center;
+        margin-left: 30%;
+}
    }
 }
 //smartphones
