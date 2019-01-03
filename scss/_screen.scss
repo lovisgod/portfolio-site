@@ -88,7 +88,7 @@
 //smartphones
 @include smallM {
     main#home h1{
-        margin-top: 10vh;
+        margin-top: 15vh;
     }
      .projects{
         grid-template-columns:1fr;
@@ -97,4 +97,9 @@
     main#work h1{
         margin-top: 15vh;
     }
+
+    main#contact h1{
+        margin-top:15vh;
+    }
+    
 }

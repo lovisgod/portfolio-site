@@ -169,6 +169,34 @@ main{
     color:#333;
 }
 
+//contact page 
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap; //this makes it go to another line when its bigger or does not contain screen
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div{
+        font-size: 2rem;
+        border: 3px solid #fff;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+
+        &:hover{
+            padding: 0.5rem 1.5rem;
+            background: $secondary-color;
+            color: #000;
+
+            span{
+                color: #fff;
+            }
+        }
+    }
+}
+
 #main-footer{
     position: fixed;
     bottom: 0;
