@@ -1,11 +1,16 @@
 //xtra large
 
 @include xtraLargeM {
+    .projects{
+        grid-template-columns: repeat(4, 1fr);
+    }
 
 }
 //laptops and desktops
 @include largeM {
-    
+     .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 //tablets and small laptops
 @include mediumM {
@@ -76,10 +81,20 @@
         margin-left: 30%;
 }
    }
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 //smartphones
 @include smallM {
     main#home h1{
         margin-top: 10vh;
+    }
+     .projects{
+        grid-template-columns:1fr;
+    }
+
+    main#work h1{
+        margin-top: 15vh;
     }
 }
