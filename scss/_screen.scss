@@ -54,6 +54,19 @@
         }
        }
    }
+
+   .about-info{
+       display: grid;
+       grid-template-areas: 
+       'bio-image'
+       'bio'
+       'job1'
+       'job2'
+       'job3';
+
+       grid-template-columns: 1fr;
+
+   }
 }
 //smartphones
 @include smallM {

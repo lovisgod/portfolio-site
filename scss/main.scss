@@ -2,7 +2,7 @@
 @import 'config';
 //the menu is imported after the config and the menu can use functions or variables from config
 @import 'menu';
-@import 'screen';
+
 
 * {
     box-sizing: border-box;
@@ -55,7 +55,7 @@ header{
 main{
    
     padding: 4rem;
-    height: 100%;
+    min-height: 100%;
 
     .icons {
         margin-top: 1rem;
@@ -78,3 +78,58 @@ main{
     }
 }
 
+.about-info{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'bio-image bio bio'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio-image{
+    grid-area: bio-image;
+    width: 150px;
+    height: 150px;
+    border: solid $secondary-color 3px;
+    border-radius: 50%;
+    background-position: center center;
+}
+
+.bio{
+    grid-area: bio;
+}
+
+.job-1{
+    grid-area: job1;
+}
+
+.job-2{
+    grid-area: job2;
+}
+
+.job-3{
+    grid-area: job3;
+}
+
+.job{
+    background: lighten($color: $primary-color, $amount: 5);
+    padding: 0.5rems;
+    border-bottom: $secondary-color 5px solid;
+
+}
+}
+
+#main-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background: darken($color: $primary-color, $amount: 10);
+    color: #fff;
+    text-align: center;
+}
+
+
+//we import screen partial at the bottom because 
+//we need it to load after all the page have loaded
+@import 'screen';
