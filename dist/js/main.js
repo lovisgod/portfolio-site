@@ -17,7 +17,7 @@ function toogleMenu(){
     if(!showMenu){
         menuBtn.classList.add('close');
         menu.classList.add('show');
-        menuBranding.classList.add('sshow');
+        menuBranding.classList.add('show');
         menuNav.classList.add('show');
         navItem.forEach(item => item.classList.add('.show'));
 
@@ -26,7 +26,7 @@ function toogleMenu(){
     }else{
         menuBtn.classList.remove("close");
         menu.classList.remove("show");
-        menuBranding.classList.remove("sshow");
+        menuBranding.classList.remove("show");
         menuNav.classList.remove("show");
         navItem.forEach(item => item.classList.remove(".show"));
 
