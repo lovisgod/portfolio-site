@@ -13,6 +13,6 @@
   "dependencies": {
     "eslint": "^5.11.1",
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   }
 }
